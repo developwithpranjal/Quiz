@@ -77,7 +77,7 @@ function ShowQuestion() {
       img.src = imgURL;
       img.style.width = "150px";
       img.style.borderRadius = "10px";
-      imageContainer.appendChild(img);
+      imageContainer.append(img);
     });
   }
 

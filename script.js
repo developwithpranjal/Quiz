@@ -116,13 +116,13 @@ function timers() {
 choices.forEach((option) => {
   option.addEventListener("click", () => {
     if (option.innerHTML === arr[QuesNum].ans) {
-      option.style.backgroundColor = "green";
+      option.style.backgroundColor = "#7fff00";
       score++;
     } else {
       option.style.backgroundColor = "red";
       choices.forEach((opt) => {
         if (opt.innerHTML === arr[QuesNum].ans) {
-          opt.style.backgroundColor = "green";
+          opt.style.backgroundColor = "#7fff00";
         } else {
           opt.style.color = "";
         }

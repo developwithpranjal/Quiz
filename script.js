@@ -54,7 +54,7 @@ let intervals;
 let getrandom = [];
 
 ShowQuestion();
-// timers();
+timers();
 
 function RandomQuestions() {
   let RandomValue = Math.floor(Math.random() * arr.length);

@@ -54,7 +54,7 @@ let intervals;
 let getrandom = [];
 
 ShowQuestion();
-timers();
+// timers();
 
 function RandomQuestions() {
   let RandomValue = Math.floor(Math.random() * arr.length);
@@ -63,6 +63,8 @@ function RandomQuestions() {
   } else {
     getrandom.push(RandomValue);
     QuesNum = RandomValue;
+    // console.log(QuesNum);
+    
   }
 }
 

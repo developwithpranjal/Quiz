@@ -6,6 +6,7 @@ const button = document.querySelector(".next");
 const box = document.querySelector(".box");
 const imageContainer = document.querySelector(".image-container");
 
+
 const arr = [
   {
     question: " Q1).Who Stole the most number of Votes during Elections?",
@@ -53,6 +54,7 @@ let score = 0;
 let intervals;
 let getrandom = [];
 
+
 ShowQuestion();
 timers();
 
@@ -73,6 +75,7 @@ function ShowQuestion() {
   let saveques = arr[QuesNum];
   ques.textContent = saveques.question;
    imageContainer.innerHTML = "";
+   
    if (saveques.ContainsImage === true) {
     saveques.images.forEach((imgURL) => {
       let img = document.createElement("img");
@@ -115,6 +118,11 @@ function timers() {
 
 choices.forEach((option) => {
   option.addEventListener("click", () => {
+    choices.forEach((opt)=>{
+        opt.style.pointerEvents = "none";
+    })
+   
+    
     if (option.innerHTML === arr[QuesNum].ans) {
       option.style.backgroundColor = "#7fff00";
       score++;
@@ -132,14 +140,20 @@ choices.forEach((option) => {
 });
 function ResetAll() {
   choices.forEach((opt) => {
+
     opt.style.backgroundColor = "#f1f2f6";
+    opt.style.pointerEvents = "auto";
+   
+
   });
 }
 
 function DisplayScore() {
+    document.querySelector("h2").style.display = "none";
+
   let para = document.createElement("p");
-  para.style.color = "white";
-  para.style.fontSize = "20px";
+  para.classList.add("score");
+  
   para.innerText = ` Your Score Is ${score} Out Of ${arr.length}`;
   box.append(para);
 }

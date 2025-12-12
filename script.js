@@ -65,7 +65,7 @@ function RandomQuestions() {
   } else {
     getrandom.push(RandomValue);
     QuesNum = RandomValue;
-    // console.log(QuesNum);
+    
     
   }
 }

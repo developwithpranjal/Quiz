@@ -9,13 +9,13 @@ const imageContainer = document.querySelector(".image-container");
 
 const arr = [
   {
-    question: " Q1).Who Stole the most number of Votes during Elections?",
+    question: "Who Stole the most number of Votes during Elections?",
     ans: "आदरणीय मोदीजी",
     options: ["Rahul Gandhi", "आदरणीय मोदीजी", "Nitish Kumar", "Vin Deisel"],
      ContainsImage :false
   },
   {
-    question: "Q2).Who is the owner of FUll STACK LEARNING?",
+    question: "Who is the owner of FUll STACK LEARNING?",
     ans: "Mr.Rohit Jain",
     options: [
       "Jawaharlal Nehru",
@@ -27,19 +27,19 @@ const arr = [
         ContainsImage :false
   },
   {
-    question: "Q3).Who was the Lead Actor in Top Gun - Maverick",
+    question: "Who was the Lead Actor in Top Gun - Maverick",
     ans: "Tom Cruise",
     options: ["Dharam paaji", "ModiJi", "Tom Cruise", "Kartik Aryan"],
          ContainsImage :false
   },
   {
-    question: "Q4).Highest grossing Bollywood Movie?",
+    question: "Highest grossing Bollywood Movie?",
     ans: "Pathan",
     options: ["Ra.One", "Pathan", "Avatar", "Dhurandhar"],
     ContainsImage :false
   },
   {
-    question: "Q5).Name of this Person?",
+    question: "Name of this Person?",
     images: ["https://www.dailysia.com/wp-content/uploads/2022/12/Dhruv-Rathee_2.jpg?x62393"],
     
     ans: "Dhruv Rathee",
